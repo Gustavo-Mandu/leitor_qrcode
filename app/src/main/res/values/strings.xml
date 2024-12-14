@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Leitor_Evento</string>
+
+    <string-array name="eventoSpinner">
+        <item>Palestra - Cyber-Segurança - UNICID Carrão (11/12)</item>
+        <item>Show - Slipknot - Allianz Parque (25/12)</item>
+        <item>Musical - O Fantasma da Ópera - Teatro Renault (19/12)</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".ListaDosQR" android:screenOrientation="portrait">
+
+
+
+    <View
+        android:id="@+id/containerMain"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/container_login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.468" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="cursive"
+        android:text="QR Code"
+        android:textColor="#FF0000"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/containerMain"
+        app:layout_constraintStart_toStartOf="@id/containerMain"
+        app:layout_constraintTop_toTopOf="@id/containerMain"/>
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Lista dos QR Code"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/containerMain"
+        app:layout_constraintStart_toStartOf="@id/containerMain"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <TextView
+        android:id="@+id/txtDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Para acessar a lista é necessário ter acesso administrativo e entrar na conta do Firebase.\n\nClique no botão abaixo para ser redirecionado."
+        android:textSize="18sp"
+        android:padding="40dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/containerMain"
+        app:layout_constraintStart_toStartOf="@id/containerMain"
+        app:layout_constraintTop_toBottomOf="@id/txtTitle" />
+
+    <Button
+        android:id="@+id/buttonInicial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tela inicial"
+        android:backgroundTint="@color/red"
+        app:layout_constraintBottom_toBottomOf="@+id/containerMain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDesc" />
+
+    <Button
+        android:id="@+id/btnFirebase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Firebase"
+        android:backgroundTint="@color/red"
+        app:layout_constraintBottom_toTopOf="@+id/buttonInicial"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDesc" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity" android:screenOrientation="portrait">
+
+
+    <View
+        android:id="@+id/containerMain"
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/container_login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.468" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="cursive"
+        android:text="QR Code"
+        android:textColor="#FF0000"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/containerMain"
+        app:layout_constraintStart_toStartOf="@id/containerMain"
+        app:layout_constraintTop_toTopOf="@id/containerMain"/>
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Opções"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/containerMain"
+        app:layout_constraintStart_toStartOf="@id/containerMain"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <Button
+        android:id="@+id/txtDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:backgroundTint="@color/red"
+        android:elevation="1dp"
+        android:padding="15sp"
+        android:text="Lista dos QR Codes"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:cornerRadius="30dp"
+        app:layout_constraintVertical_bias="0.03"
+        app:layout_constraintBottom_toBottomOf="@id/containerMain"
+        app:layout_constraintEnd_toEndOf="@id/containerMain"
+        app:layout_constraintTop_toBottomOf="@id/txtTitle"
+        app:layout_constraintStart_toStartOf="@id/containerMain" />
+
+
+
+    <Button
+        android:id="@+id/btnLerQRcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:backgroundTint="@color/red"
+        android:elevation="1dp"
+        android:padding="15sp"
+        android:text="Ler QR Code"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:cornerRadius="30dp"
+        app:layout_constraintVertical_bias="0.03"
+        app:layout_constraintBottom_toBottomOf="@id/containerMain"
+        app:layout_constraintEnd_toEndOf="@id/containerMain"
+        app:layout_constraintTop_toBottomOf="@id/txtDesc"
+        app:layout_constraintStart_toStartOf="@id/containerMain" />
+
+    <Button
+        android:id="@+id/btnGerarQRcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:backgroundTint="@color/red"
+        android:elevation="1dp"
+        android:padding="15sp"
+        android:text="Gerar QR Code"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:cornerRadius="30dp"
+        app:layout_constraintVertical_bias="0.03"
+        app:layout_constraintBottom_toBottomOf="@id/containerMain"
+        app:layout_constraintEnd_toEndOf="@id/containerMain"
+        app:layout_constraintTop_toBottomOf="@id/btnLerQRcode"
+        app:layout_constraintStart_toStartOf="@id/containerMain" />
+
+    <Spinner
+        android:id="@+id/eventSpinner"
+        android:layout_width="332dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnGerarQRcode" />
+
+    <TextView
+        android:id="@+id/txtLogar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="40dp"
+        android:text="Trocar de Conta"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:translationY="30dp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnGerarQRcode" />
+
+    <ImageView
+        android:id="@+id/imgQrCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/eventSpinner"
+        app:srcCompat="@drawable/captura_de_tela_2024_11_09_142630" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

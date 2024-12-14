@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "429060728425",
+    "firebase_url": "https://leitorqrcodesdk-default-rtdb.firebaseio.com",
+    "project_id": "leitorqrcodesdk",
+    "storage_bucket": "leitorqrcodesdk.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:429060728425:android:6494e3c08b559713c2e4f8",
+        "android_client_info": {
+          "package_name": "com.example.leitor_evento"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDy6u2nVjDTq0XRff6F5S7ZcDsiBj6wOms"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
