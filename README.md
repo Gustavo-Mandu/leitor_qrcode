@@ -1,1 +1,0 @@
-Projeto de QR Code para a disciplina Programação para Dispositivos Móveis da UNICID.
